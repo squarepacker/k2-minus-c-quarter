@@ -1,0 +1,13 @@
+{
+ "T2": {
+  "cfgs": 40,
+  "samples": 16000,
+  "match": 16000,
+  "mismatch": 0,
+  "skipped": 0,
+  "Mchecked": 0,
+  "Mbad": 0,
+  "examples": [],
+  "time": 1.4735698699951172
+ }
+}

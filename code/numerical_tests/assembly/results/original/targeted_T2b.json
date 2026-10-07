@@ -1,0 +1,10 @@
+{
+ "cfgs": 60,
+ "win_samples": 18000,
+ "win_match": 18000,
+ "M_samples": 610,
+ "M_match": 610,
+ "M_measure": 0.24381136862958197,
+ "examples": [],
+ "time": 1.2418723106384277
+}

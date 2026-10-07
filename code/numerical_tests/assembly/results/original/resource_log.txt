@@ -1,0 +1,43 @@
+19:36:00 campsmoke start free=2175 MB
+19:36:12 campsmoke done 10 configs in 12 s, rss=0 MB
+19:36:32 campB start free=2146 MB
+19:36:32 campA start free=2146 MB
+19:37:38 targeted T1+T2 start free=2124 MB
+19:37:51 targeted T4+T3 start free=2123 MB
+19:39:17 targeted T4b start free=2035 MB
+19:40:01 campC start free=2028 MB
+19:56:33 campA done 564 configs in 1200 s, rss=0 MB
+19:56:34 campB done 421 configs in 1202 s, rss=0 MB
+19:56:43 campC done 364 configs in 1002 s, rss=0 MB
+19:57:09 summary+T2b start free=2009 MB
+19:58:20 replay A,C + T2b start free=1983 MB
+19:59:38 replay A,C (file targets) start free=1719 MB
+20:04:17 replaycheck: free 1525 MB < 1536 -> wait 2 min
+20:06:18 recheck free=1452 MB
+20:07:14 recheck free=1441 MB
+20:09:14 recheck free=1456 MB
+20:11:50 recheck free=1542 MB
+20:12:35 replay A: free 1533 < 1536 -> wait
+20:14:36 recheck free=1501 MB
+20:16:36 recheck free=1477 MB
+20:18:37 recheck free=1484 MB
+20:19:12 recheck free=1476 MB
+20:21:29 recheck free=1513 MB
+20:23:30 recheck free=1351 MB
+20:25:30 recheck free=1357 MB
+20:27:31 recheck free=1439 MB
+20:29:54 recheck free=1479 MB
+20:31:54 recheck free=1430 MB
+20:33:55 recheck free=1372 MB
+20:35:55 recheck free=1386 MB
+20:38:13 recheck free=1440 MB
+20:40:14 recheck free=1446 MB
+20:42:14 recheck free=1435 MB
+20:44:15 recheck free=1399 MB
+20:44:26 low memory > 40 min (since 20:04:17) -> tiny runs only (<100MB,<1min); free=1356 MB
+20:44:43 tiny genpart 0-100: 17.7s
+20:45:37 tiny genpart 101-300: 47.6s
+20:46:24 tiny genpart 301-523: 46.6s
+20:46:31 tiny eval 0-1: 0.4s
+20:46:44 tiny eval 1-14: 5.2s
+20:47:13 tiny summary: 0.6s free=1316

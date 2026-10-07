@@ -1,0 +1,91 @@
+﻿files ['campA.jsonl', 'campB.jsonl', 'campC.jsonl']
+families {'rows': 131, 'nested': 71, 'columns': 132, 'lshape': 130, 'valley': 131, 'floortouch': 130, 'random': 70, 'hill': 131, 'nestedEG': 420}
+
+E_cfg                            1106
+L3_f_pos                         1903
+L3_fstar_pos                     3715
+L4_f_pos                         1063
+L4_iii_nontrivial                1169
+T1_nontrivial                    8177
+T_cfg                            908
+VIOL_L1_r_shadow                 18
+VIOL_L2_T1                       0
+VIOL_L2_mono                     0
+VIOL_L2_symd                     0
+VIOL_LTleN                       0
+VIOL_l35                         0
+VIOL_lam                         0
+VIOL_outV                        0
+VIOL_p2v                         0
+VIOL_p4                          0
+VIOL_step3                       0
+VIOL_tiltv                       0
+VIOL_wall                        0
+W_cfg                            159
+anom                             0
+cases_Zpos                       52901
+cases_s                          304400
+configs                          1346
+diag_nobW_gt1                    3136
+merges_cfg                       175
+neg_orderB_runs                  445
+neg_orderB_symd_pos              18
+neg_w0_p2v                       76606
+neg_w0_r_gt1                     79
+neg_w0_runs                      1346
+valid                            1346
+variants                         7610
+
+F0_bd                            2.13163e-14    campA-5
+F0_ov                            2.44249e-15    campA-221
+F0_p4min                         -1.02307e-13   campA-96
+K_A_ii_max                       0.00532983     campA-209/v2(om=16,c1=0.25,eps=0.2)
+K_Aprime_meas_max                0.0663602      campA-329/v0(om=0.95,c1=0.1,eps=0.4)
+K_CLam_meas_max                  0.13913        campA-465/v0(om=16,c1=0.25,eps=0.4)
+K_Gamma_meas_max                 0.000953081    campB-135/v1(om=0.95,c1=0.35,eps=0.3)
+L1_LTminusN                      7.10543e-15    campC-301/v1(om=28,c1=0.1,eps=0.2)/ceil
+L1_bdmax                         1.5099e-14     campC-50/v1(om=28,c1=0.25,eps=0.2)/ceil
+L1_lam_excess                    0              campA-0/v0(om=0.8,c1=0.04,eps=0.3)/ceil
+L1_lb1                           0.00359065     campB-113/v1(om=0.95,c1=0.3,eps=0.35)/ceil
+L1_lb2                           0.842459       campC-263/v5(om=24,c1=0.04,eps=0.35)/floor
+L1_lbZ                           0.00118838     campA-313/v2(om=0.95,c1=0.35,eps=0.3)/floor
+L1_nZmax                         150            campB-130/v4(om=32,c1=0.35,eps=0.35)/ceil
+L1_ovmax                         2.44249e-15    campA-221/v1(om=0.95,c1=0.35,eps=0.3)/ceil
+L1_p4min                         -2.29816e-14   campC-202/v0(om=0.95,c1=0.25,eps=0.4)/ceil
+L1_r_meas                        0.914656       campB-6/v3(om=0.99,c1=0.25,eps=0.3)/floor
+L1_r_nobW                        4.23387        campA-409/v3(om=0.98,c1=0.15,eps=0.2)/ceil
+L1_r_paper                       0.899611       campB-90/v3(om=0.99,c1=0.25,eps=0.3)/ceil
+L1_r_shadow                      1.09139        campA-163/v3(om=16,c1=0.1,eps=0.4)/ceil
+L1_r_sharp                       0.914656       campB-335/v3(om=0.99,c1=0.25,eps=0.3)/ceil
+L1_step3min                      -1.42109e-14   campA-421/v0(om=24,c1=0.35,eps=0.2)/floor
+L1_wall_ratio                    0.170275       campC-313/v0(om=0.98,c1=0.1,eps=0.4)/floor
+L2_N_vs_n                        4.52971e-14    campA-368/v0(om=1.5,c1=0.25,eps=0.3)/ceil
+L2_T1_exact                      0.573599       campC-27/v0(om=28,c1=0.02,eps=0.4)/ceil
+L2_T1_grid                       0.595847       campC-313/v0(om=0.98,c1=0.1,eps=0.4)/ceil
+L2_symd                          4.61853e-14    campA-368/v0(om=1.5,c1=0.25,eps=0.3)/ceil
+L3_LBint_ratio                   0.000876343    campB-128/v1(om=0.95,c1=0.3,eps=0.35)/floor
+L3_LBint_ratio_star              0.495462       campC-50/v5(om=28,c1=0.1,eps=0.35)/ceil
+L3_P7int_ratio_meas              0.562722       campA-285/v3(om=1.5,c1=0.06,eps=0.3)/ceil
+L3_P7int_ratio_paper             0.546706       campB-198/v3(om=0.99,c1=0.25,eps=0.35)/floor
+L3_T2_ratio                      0.862249       campC-178/v4(om=0.97,c1=0.25,eps=0.35)/ceil
+L3_T2_swap_rel                   1.12679e-09    campB-85/v2(om=0.97,c1=0.25,eps=0.35)/floor
+L3_T2s_ratio                     0.900517       campA-436/v3(om=24,c1=0.06,eps=0.2)/ceil
+L3_chain_ratio_meas              0.000279786    campB-407/v1(om=0.95,c1=0.3,eps=0.3)/floor
+L3_chain_ratio_paper             0.000111343    campB-289/v1(om=0.95,c1=0.3,eps=0.35)/ceil
+L3_chain_ratio_star_meas         0.159079       campB-299/v3(om=0.99,c1=0.25,eps=0.35)/floor
+L4_41_ratio                      0.891231       campB-5/v0(om=0.9,c1=0.35,eps=0.3)
+L4_Yt_reflect_diff               6.31439e-16    campB-318/v1(om=0.95,c1=0.35,eps=0.3)
+L4_ceil_ratio_meas               0.000279402    campB-332/v1(om=0.95,c1=0.3,eps=0.3)
+L4_ceil_ratio_paper              0.000111343    campB-289/v1(om=0.95,c1=0.3,eps=0.35)
+L4_floor_ratio_meas              0.000279786    campB-407/v1(om=0.95,c1=0.3,eps=0.3)
+L4_floor_ratio_paper             0.000110023    campB-407/v1(om=0.95,c1=0.3,eps=0.3)
+L4_iii_split_ratio               0.999456       campB-283/v1(om=0.95,c1=0.3,eps=0.35)
+L4_kind_i_ratio                  0.176236       campC-172/v2(om=28,c1=0.1,eps=0.2)
+L4_lH_reflect_diff               8.88178e-16    campA-4/v1(om=0.98,c1=0.06,eps=0.4)
+L4_ratio4_paper                  0.0130624      campA-57/v3(om=0.5,c1=0.04,eps=0.3)
+L4_ratio4_sharp                  0.46051        campC-67/v1(om=0.5,c1=0.02,eps=0.3)
+dropped                          0              campA-0
+l35_min                          -2.13978e-14   campB-273/v2(om=0.97,c1=0.25,eps=0.35)
+neg_orderB_symd                  0.0135635      campC-90
+neg_w0_rmax                      10.5221        campC-7
+total_measure_err                2.13163e-14    campA-5
