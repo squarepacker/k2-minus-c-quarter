@@ -1,0 +1,24 @@
+==========================================================================================
+Thm4.3: B=38.5067952903, max B keeping Psi(k0)>=c*k0^1/4: 38.5108242829  -> slack dB=0.00402899 (relative 0.0001046)
+   max C_Lambda (P5)              : 1.0150102
+   max A' (P6)                    : 10.609051  (now 10.6068)
+   max A  (L4.13/L4.15)           : 10.608919  (now 10.6067)
+   max b_W (P7)                   : 53.094239  (now 2.0002)
+   max extra C' in Lambda_1<=C'W/delta : 0.015009966
+   scenario as stated   : crossing k = 4.61667e+12  (holds at k0=4.62e12: True)
+   scenario C_Lambda=2  : crossing k = 4.84497e+12  (holds at k0=4.62e12: False)
+   scenario C_Lambda=3  : crossing k = 5.08754e+12  (holds at k0=4.62e12: False)
+   scenario A'=A'+0.01  : crossing k = 4.63147e+12  (holds at k0=4.62e12: False)
+   scenario b_W=4       : crossing k = 4.6168e+12  (holds at k0=4.62e12: True)
+==========================================================================================
+Thm4.4: B=42.3094562649, max B keeping Psi(k0)>=c*k0^1/4: 42.3101918466  -> slack dB=0.000735582 (relative 1.739e-5)
+   max C_Lambda (P5)              : 1.0029912
+   max A' (P6)                    : 12.748049  (now 12.7476)
+   max A  (L4.13/L4.15)           : 12.748043  (now 12.7476)
+   max b_W (P7)                   : 12.430039  (now 2.0002)
+   max extra C' in Lambda_1<=C'W/delta : 0.0029910065
+   scenario as stated   : crossing k = 2.1696e+13  (holds at k0=2.17e13: True)
+   scenario C_Lambda=2  : crossing k = 2.30945e+13  (holds at k0=2.17e13: False)
+   scenario C_Lambda=3  : crossing k = 2.46075e+13  (holds at k0=2.17e13: False)
+   scenario A'=A'+0.01  : crossing k = 2.17859e+13  (holds at k0=2.17e13: False)
+   scenario b_W=4       : crossing k = 2.16967e+13  (holds at k0=2.17e13: True)

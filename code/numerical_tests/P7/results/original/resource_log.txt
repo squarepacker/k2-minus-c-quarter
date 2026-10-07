@@ -1,0 +1,24 @@
+﻿2026-10-06 17:56:48 free_MB=2958 (session start)
+2026-10-06 18:09:54 free_MB=2428 start smoke
+2026-10-06 18:10:02 free_MB=2378 start smoke
+2026-10-06 18:11:45 free_MB=2336 start trial runs (3 x 30 s, sequential)
+2026-10-06 18:16:04 free_MB=2874 start trial2 (random 40 s, drift 20 s)
+2026-10-06 18:17:39 free_MB=3086 launch campaigns A(blocked,101) B(drift,202) C(random,303), 1500 s each, 3 processes
+PIDs A=34544 B=40508 C=51756
+2026-10-06 18:19:23 check: free_MB=2934
+2026-10-06 18:24:15 stopped campaign C PID 51756 early (to free a slot)
+2026-10-06 18:24:17 free_MB=2774 launch targeted (T1-T6)
+targeted PID 44804
+2026-10-06 18:26:12 free_MB=3034 run targeted2 (my procs before: 2)
+2026-10-06 18:26:39 free_MB=3033 rerun targeted2
+2026-10-06 18:26:51 free_MB=3006 launch maxratio (1500 s)
+maxratio PID 50508
+2026-10-06 18:36:50 free_MB=2895 launch round2 (seed 404, 1200 s)
+round2 PID 52948
+2026-10-06 18:43:53 free_MB=2668 launch blocked2 (seed 505) and drift (seed 606), 1100 s each
+PIDs D=39832 E=44180
+2026-10-06 18:57:21 free_MB=2706 run T7
+2026-10-06 19:03:13 free_MB=2446 summary
+2026-10-06 19:04:19 free_MB=2379 launch merge tests seeds 71,72 (480 s each)
+merge PIDs 47964 45280
+2026-10-06 19:14:56 free_MB=2160 all runs finished; no p7x process running; peak WS per process ~41 MB; never more than 3 own processes (other agents' python processes not counted)

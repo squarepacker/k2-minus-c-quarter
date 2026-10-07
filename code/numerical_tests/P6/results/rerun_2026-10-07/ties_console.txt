@@ -1,0 +1,9 @@
+tie_tS_eq_tD viol 0 meas {'D': '8'} pairs {'(-1, 0)': '1'}
+    pair (0,1) present? False
+tie_cum_gap_eq_delta viol 0 meas {'D': '8'} pairs {'(-1, 0)': '1'}
+    pair (0,1) present? False
+just_below_tie viol 0 meas {'D': '8'} pairs {'(-1, 0)': '1', '(0, 1)': '1/2'}
+    pair (0,1) measure 1/2
+stack_to_h viol 0 meas {'D': '7', 'H': '1'} pairs {'(-1, 0)': '1', '(0, 1)': '1', '(1, 2)': '1'}
+walls viol 0 meas {'D': '32747814664/4103672001', 'E': '398/39975', 'W': '636402/64159975'} pairs {'(-1, 1)': '1', '(-1, 0)': '1599/1601', '(0, 2)': '111624591/128160050'}
+total violations 0

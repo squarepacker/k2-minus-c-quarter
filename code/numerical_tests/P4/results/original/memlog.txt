@@ -1,0 +1,17 @@
+﻿2026-10-06 18:16:34 free=2764MB OK run: p4sx_run.py unit
+2026-10-06 18:16:43 free=2782MB OK run: p4sx_run.py valley,zigzag,deaths,near45,wall,floor,jam,tower 8 11 400 smoke.jsonl 30
+2026-10-06 18:18:25 free=2936MB OK run: p4sx_run.py rows,rows_defs,wallmax,valley_defs,deaths_defs,jam_defs 6 21 400 smoke2.jsonl 40
+2026-10-06 18:19:23 free=2855MB OK run: p4sx_run.py valley,zigzag,rows,near45,deaths,floor,jam,tower,wall,wallmax 100000 1001 2100 res_scaled.jsonl 60
+2026-10-06 18:19:24 free=2825MB OK run: p4sx_run.py valley_defs,zigzag_defs,rows_defs,deaths_defs,floor_defs,jam_defs,tower_defs 100000 2002 2100 res_defs.jsonl 60
+2026-10-06 18:19:24 free=2790MB OK run: p4sx_run.py valley,zigzag,valley_defs,wallmax,rows,wall 100000 3003 2100 res_merge.jsonl 60
+2026-10-06 18:22:00 free=2739MB OK run: p4sx_negctl.py
+2026-10-06 18:56:26 free=2836MB OK run: p4sx_summary.py res_scaled.jsonl res_merge.jsonl res_defs.jsonl
+2026-10-06 18:56:43 free=2717MB OK run: p4sx_ties.py
+2026-10-06 18:56:44 free=2681MB OK run: p4sx_run.py dag,near45,dag 100000 4004 900 res_dag.jsonl 60 manyvar
+2026-10-06 18:56:44 free=2658MB OK run: p4sx_run.py valley,deaths,floor,rows,zigzag,floor_defs 100000 5005 900 res_manyvar.jsonl 60 manyvar
+2026-10-06 18:56:47 free=2658MB OK run: p4sx_wallsweep.py
+2026-10-06 18:57:23 free=2609MB OK run: p4sx_exclab.py
+2026-10-06 19:14:42 free=2101MB OK run: p4sx_summary.py res_dag.jsonl res_manyvar.jsonl res_ties.jsonl
+2026-10-06 19:14:43 free=2093MB OK run: p4sx_summary.py res_scaled.jsonl res_merge.jsonl res_defs.jsonl res_dag.jsonl res_manyvar.jsonl res_ties.jsonl
+2026-10-06 19:15:20 free=2185MB OK run: inline totals script
+NOTE (written 19:17): one unguarded tiny run - the inline smoke2.jsonl summary (python, <1 s, <30 MB) at ~18:18:30 ran without the if-guard; guard readings just before/after: 2936 MB (18:18:25) and 2855 MB (18:19:23), i.e. above 1.5 GB. All other runs guarded.

@@ -1,0 +1,741 @@
+====================================================================================================
+SECTION C. constants (PROOF 4.1)
+OK   A (K_w*=9)                                     true=10.6066176277246545        stated=10.60661762772   dir=approx nearest
+OK   A' (K_w*=9)                                    true=10.6066176377365869        stated=10.60661763773   dir=approx within 1 ulp
+OK   C_Lambda                                       true=1.00000011856              stated=1.00000011856    dir=approx nearest
+OK   A_13                                           true=12.7475679053338201        stated=12.74756790533   dir=approx nearest
+OK   A'_13                                          true=12.7475679153481611        stated=12.74756791534   dir=approx within 1 ulp
+OK   C_Lambda^(13)                                  true=1.00000017126              stated=1.00000017126    dir=approx nearest
+OK   interval: A < 10.6067   10.606617627724654453
+OK   interval: A' < 10.6068   10.606617637736586898
+OK   interval: C_L <= 1.0000002
+OK   interval: A_13 < 12.7476   12.747567905333820076
+OK   interval: A'_13 < 12.7476   12.74756791534816109
+OK   interval: C_L13 <= 1.0000002
+OK   PROOF 2.2: 4 sqrt(13/Q*)/((2-bb)cos bb)+1e-8 <= A'_13 (=A13/cos bb+1e-8)   alt=12.74755835466506
+OK   tan x <= 1.000001 x at x=1.5e-6 (tan x/x increasing)   7.5e-13
+OK   sec x - 1 <= 0.50001 x^2 at x=1e-3
+OK   sin a + 1 - cos a <= 1.0001 a at a=1.0e-30
+OK   sin a + 1 - cos a <= 1.0001 a at a=1.0e-12
+OK   sin a + 1 - cos a <= 1.0001 a at a=1.0e-9
+OK   sin a + 1 - cos a <= 1.0001 a at a=1.5e-6
+OK   identity 3(1-v^4)-4v^3(1-v^3) = (v-1)^2(4v^4+8v^3+9v^2+6v+3) (200 random v)
+====================================================================================================
+SET Thm4.3 pi* k0=4.62e12  variant round9  pi= ('0.3078', '0.2754', '42108000000', '5.8e-6', '1.7e-5')  k= 4.62e12  c*= 0.1
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3078
+OK   [iv] C0 c1>0   margin_lo=0.2754
+OK   [iv] C0 eps>0   margin_lo=5.8e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999942
+OK   [iv] C0 om0>0   margin_lo=1.7e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.7098986e-11
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4970373e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=139.15574
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499983
+OK   [iv] C5 1/2-w0>0   margin_lo=0.45261863
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850002
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997037e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4970373e-6
+OK   [iv] X4 h0>0   margin_lo=0.90523726
+OK   [iv] X5 invF>0   margin_lo=0.99998819
+OK   [iv] X6 1-invF>=0   margin_lo=1.181485e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=2.2678786e+12
+  50-digit values: B=38.5067952903366  Psi=146.624293343009  Psi/k^1/4=0.100010463069  rho=0.15814283504  h0=0.905237259253  invF=0.99998818515
+  interval  Psi in [146.62429334300892695, 146.62429334300892695]
+OK   alpha0                                         true=1.49998290101396932e-6     stated=1.4999829e-6     dir=approx nearest
+OK   beta0                                          true=2.96271908585241897e-9     stated=2.96e-9          dir=approx nearest
+OK   C3rhs                                          true=139.431137063199971        stated=139.43           dir=approx nearest
+OK   w0                                             true=0.0473813703735533563      stated=0.0473814        dir=upper  nearest
+OK   h0                                             true=0.905237259252893287       stated=0.9052372        dir=lower  within 1 ulp
+OK   epsy0                                          true=244226.4                   stated=244226           dir=lower  nearest
+UNSF invF                                           true=0.999988185150415787       stated=0.99998819       dir=lower  nearest
+OK   Gamma                                          true=0.0000284711787547302063   stated=2.85e-5          dir=upper  nearest
+OK   T1                                             true=0.000632816242866508387    stated=0.000633         dir=upper  nearest
+OK   T2                                             true=19.2568990559186638        stated=19.25690         dir=upper  nearest
+OK   T3                                             true=19.2492349469963451        stated=19.24924         dir=upper  within 1 ulp
+OK   Gamma2                                         true=0.0000284711787547302063   stated=0.0000285        dir=upper  nearest
+OK   B                                              true=38.5067952903366301        stated=38.50680         dir=upper  nearest
+OK   Kcoef                                          true=3.57898965364547391        stated=3.57899          dir=upper  nearest
+UNSF OmUB                                           true=0.379415184934019686       stated=0.379415         dir=upper  nearest
+OK   wall                                           true=1.35792302131484055        stated=1.35793          dir=upper  within 1 ulp
+OK   wall_task                                      true=1.35792302131484055        stated=1.358            dir=upper  nearest
+OK   lH                                             true=5647.48557862566413        stated=5647.4855        dir=lower  within 1 ulp
+OK   Psi                                            true=146.624293343008927        stated=146.62429        dir=lower  nearest
+UNSF target                                         true=146.608953547198737        stated=146.60895        dir=upper  nearest
+UNSF D1                                             true=0.00864298413942979524     stated=0.0086430        dir=lower  nearest
+OK   u14D1                                          true=10.6553252517626209        stated=10.655           dir=lower  nearest
+OK   KW2B                                           true=0.00440281803065626077     stated=0.0044029        dir=upper  within 1 ulp
+OK   rho                                            true=0.158142835039529806       stated=0.158143         dir=approx nearest
+OK   ratio                                          true=0.100010463068891118       stated=0.1000104        dir=lower  within 1 ulp
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.015339796
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.008642984139
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   10.655325 >= 0.004402818
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.05 k0=1.51e11  variant round9  pi= ('0.0989', '0.1561', '4349000000', '1.7e-5', '2.9e-5')  k= 1.51e11  c*= 0.05
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.0989
+OK   [iv] C0 c1>0   margin_lo=0.1561
+OK   [iv] C0 eps>0   margin_lo=1.7e-5
+OK   [iv] C0 1-eps>0   margin_lo=0.999983
+OK   [iv] C0 om0>0   margin_lo=2.9e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=3.096817e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4907825e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=25.241554
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499971
+OK   [iv] C5 1/2-w0>0   margin_lo=0.49509929
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850031
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9990782e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4907824e-6
+OK   [iv] X4 h0>0   margin_lo=0.99019858
+OK   [iv] X5 invF>0   margin_lo=0.99996232
+OK   [iv] X6 1-invF>=0   margin_lo=3.7678245e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=7.1149716e+10
+  50-digit values: B=67.9335715844633  Psi=31.1755764522866  Psi/k^1/4=0.0500115432003  rho=0.0980518736516  h0=0.990198575935  invF=0.999962321755
+  interval  Psi in [31.175576452286583887, 31.175576452286583887]
+OK   ratio                                          true=0.0500115432002505378      stated=0.0500115        dir=lower  nearest
+OK   rho                                            true=0.0980518736516200229      stated=0.09805          dir=approx nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.0071956572
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.007142953754
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   3.7442477 >= 0.00045452894
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.08 k0=1.25e12  variant round9  pi= ('0.2279', '0.237', '23084000000', '7.6e-6', '1.9e-5')  k= 1.25e12  c*= 0.08
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.2279
+OK   [iv] C0 c1>0   margin_lo=0.237
+OK   [iv] C0 eps>0   margin_lo=7.6e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999924
+OK   [iv] C0 om0>0   margin_lo=1.9e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=8.5196337e-12
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4959981e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=88.595541
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499981
+OK   [iv] C5 1/2-w0>0   margin_lo=0.47402027
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9995998e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4959981e-6
+OK   [iv] X4 h0>0   margin_lo=0.94804054
+OK   [iv] X5 invF>0   margin_lo=0.99998385
+OK   [iv] X6 1-invF>=0   margin_lo=1.6150976e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=6.0191125e+11
+  50-digit values: B=44.7509192746101  Psi=84.6117278478634  Psi/k^1/4=0.0800208316354  rho=0.142510991183  h0=0.948040543223  invF=0.999983849024
+  interval  Psi in [84.611727847863418961, 84.611727847863418961]
+OK   ratio                                          true=0.0800208316353771681      stated=0.0800208        dir=lower  nearest
+OK   rho                                            true=0.142510991183451479       stated=0.14251          dir=approx nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.022026773
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.009292314435
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   8.2621657 >= 0.0024139494
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.10 k0=4.62e12  variant round9  pi= ('0.3078', '0.2754', '42108000000', '5.8e-6', '1.7e-5')  k= 4.62e12  c*= 0.10
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3078
+OK   [iv] C0 c1>0   margin_lo=0.2754
+OK   [iv] C0 eps>0   margin_lo=5.8e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999942
+OK   [iv] C0 om0>0   margin_lo=1.7e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.7098986e-11
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4970373e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=139.15574
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499983
+OK   [iv] C5 1/2-w0>0   margin_lo=0.45261863
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850002
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997037e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4970373e-6
+OK   [iv] X4 h0>0   margin_lo=0.90523726
+OK   [iv] X5 invF>0   margin_lo=0.99998819
+OK   [iv] X6 1-invF>=0   margin_lo=1.181485e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=2.2678786e+12
+  50-digit values: B=38.5067952903366  Psi=146.624293343009  Psi/k^1/4=0.100010463069  rho=0.15814283504  h0=0.905237259253  invF=0.99998818515
+  interval  Psi in [146.62429334300892695, 146.62429334300892695]
+OK   ratio                                          true=0.100010463068891118       stated=0.1000104        dir=lower  within 1 ulp
+OK   rho                                            true=0.158142835039529806       stated=0.15814          dir=approx nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.015339796
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.008642984139
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   10.655325 >= 0.004402818
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.12 k0=2.17e13  variant round9  pi= ('0.3674', '0.3009', '60000000000', '5e-6', '1.5e-5')  k= 2.17e13  c*= 0.12
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3674
+OK   [iv] C0 c1>0   margin_lo=0.3009
+OK   [iv] C0 eps>0   margin_lo=5.0e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.999995
+OK   [iv] C0 om0>0   margin_lo=1.5e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=9.5780836e-11
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.497518e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=181.53388
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499985
+OK   [iv] C5 1/2-w0>0   margin_lo=0.43249727
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.0009985001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997518e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.497518e-6
+OK   [iv] X4 h0>0   margin_lo=0.86499454
+OK   [iv] X5 invF>0   margin_lo=0.99999021
+OK   [iv] X6 1-invF>=0   margin_lo=9.7922714e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.0789946e+13
+  50-digit values: B=35.2452945962736  Psi=259.094657295879  Psi/k^1/4=0.120044847482  rho=0.165096417568  h0=0.864994535376  invF=0.999990207729
+  interval  Psi in [259.09465729587926055, 259.09465729587926055]
+OK   ratio                                          true=0.120044847481962315       stated=0.1200448        dir=lower  nearest
+OK   rho                                            true=0.165096417568310097       stated=0.16509          dir=approx within 1 ulp
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.096795016
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.006703622579
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   12.166537 >= 0.006273283
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.14 k0=2.01e14  variant round9  pi= ('0.4086', '0.3173', '74220000000', '4.7e-6', '1.5e-5')  k= 2.01e14  c*= 0.14
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4086
+OK   [iv] C0 c1>0   margin_lo=0.3173
+OK   [iv] C0 eps>0   margin_lo=4.7e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999953
+OK   [iv] C0 om0>0   margin_lo=1.5e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.8432822e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4977686e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=212.95212
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499985
+OK   [iv] C5 1/2-w0>0   margin_lo=0.41651135
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850018
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997769e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4977686e-6
+OK   [iv] X4 h0>0   margin_lo=0.8330227
+OK   [iv] X5 invF>0   margin_lo=0.99999133
+OK   [iv] X6 1-invF>=0   margin_lo=8.6714127e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.0042531e+14
+  50-digit values: B=33.4210769040072  Psi=527.148686664373  Psi/k^1/4=0.140001959595  rho=0.167672507008  h0=0.833022696453  invF=0.999991328587
+  interval  Psi in [527.14868666437253328, 527.14868666437253328]
+OK   ratio                                          true=0.140001959594685944       stated=0.1400019        dir=lower  within 1 ulp
+OK   rho                                            true=0.167672507008088927       stated=0.16767          dir=approx nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.0073784522
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.004113542778
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   13.024394 >= 0.0077585791
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.15 k0=1.18e15  variant round9  pi= ('0.4243', '0.3234', '80030000000', '4.6e-6', '1.4e-5')  k= 1.18e15  c*= 0.15
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4243
+OK   [iv] C0 c1>0   margin_lo=0.3234
+OK   [iv] C0 eps>0   margin_lo=4.6e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999954
+OK   [iv] C0 om0>0   margin_lo=1.4e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.5415845e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4978507e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=225.35305
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499986
+OK   [iv] C5 1/2-w0>0   margin_lo=0.40997295
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850015
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997851e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4978507e-6
+OK   [iv] X4 h0>0   margin_lo=0.81994591
+OK   [iv] X5 invF>0   margin_lo=0.99999169
+OK   [iv] X6 1-invF>=0   margin_lo=8.3082463e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=5.8991726e+14
+  50-digit values: B=32.7969358604792  Psi=879.181777047449  Psi/k^1/4=0.150005843014  rho=0.168181351932  h0=0.819945905087  invF=0.999991691754
+  interval  Psi in [879.18177704744906131, 879.18177704744906131]
+OK   ratio                                          true=0.150005843014345746       stated=0.1500058        dir=lower  nearest
+OK   rho                                            true=0.168181351932467509       stated=0.16818          dir=approx nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.034245811
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.002702674135
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   13.320076 >= 0.0083678486
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair9 c*=0.16 k0=2.77e16  variant round9  pi= ('0.4376', '0.3284', '85109000000', '4.5e-6', '1.4e-5')  k= 2.77e16  c*= 0.16
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4376
+OK   [iv] C0 c1>0   margin_lo=0.3284
+OK   [iv] C0 eps>0   margin_lo=4.5e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999955
+OK   [iv] C0 om0>0   margin_lo=1.4e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=5.8356652e-12
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4979159e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=236.03008
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499986
+OK   [iv] C5 1/2-w0>0   margin_lo=0.4042412
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997916e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4979159e-6
+OK   [iv] X4 h0>0   margin_lo=0.80848241
+OK   [iv] X5 invF>0   margin_lo=0.99999196
+OK   [iv] X6 1-invF>=0   margin_lo=8.0350446e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.3849853e+16
+  50-digit values: B=32.2946946516253  Psi=2064.24123024251  Psi/k^1/4=0.160007561237  rho=0.168409005027  h0=0.808482405952  invF=0.999991964955
+  interval  Psi in [2064.2412302425082254, 2064.2412302425082254]
+OK   ratio                                          true=0.160007561236561617       stated=0.1600075        dir=lower  within 1 ulp
+OK   rho                                            true=0.16840900502652611        stated=0.16840          dir=approx within 1 ulp
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.097546742
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.001250006076
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   13.560465 >= 0.0088998605
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET table9 k=1e13  variant round9  pi= ('0.3421', '0.2903', '52015000000', '5.3e-6', '1.6e-5')  k= 1e13  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3421
+OK   [iv] C0 c1>0   margin_lo=0.2903
+OK   [iv] C0 eps>0   margin_lo=5.3e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999947
+OK   [iv] C0 om0>0   margin_lo=1.6e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=8.5872911e-12
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4973347e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=163.08456
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499984
+OK   [iv] C5 1/2-w0>0   margin_lo=0.44147262
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997335e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4973347e-6
+OK   [iv] X4 h0>0   margin_lo=0.88294524
+OK   [iv] X5 invF>0   margin_lo=0.99998943
+OK   [iv] X6 1-invF>=0   margin_lo=1.0567954e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9479585e+12
+  50-digit values: B=36.5253675522872  Psi=196.77389106892  Psi/k^1/4=0.110654090667  rho=0.162616324404  h0=0.882945244016  invF=0.999989432046
+  interval  Psi in [196.77389106891953903, 196.77389106891953903]
+OK   B                                              true=36.5253675522871765        stated=36.5254          dir=upper  nearest
+OK   Psi                                            true=196.773891068919539        stated=196.77           dir=lower  nearest
+OK   ratio                                          true=0.110654090666557609       stated=0.11065          dir=lower  nearest
+OK   W >= 197  (interval Psi_lo > 196)   Psi_lo=196.773891069 ceil=197.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table9 k=1e14  variant round9  pi= ('0.3993', '0.3136', '70863000000', '4.8e-6', '1.5e-5')  k= 1e14  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3993
+OK   [iv] C0 c1>0   margin_lo=0.3136
+OK   [iv] C0 eps>0   margin_lo=4.8e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999952
+OK   [iv] C0 om0>0   margin_lo=1.5e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=5.9269411e-12
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4977167e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=205.70394
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499985
+OK   [iv] C5 1/2-w0>0   margin_lo=0.42026816
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997717e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4977167e-6
+OK   [iv] X4 h0>0   margin_lo=0.84053632
+OK   [iv] X5 invF>0   margin_lo=0.99999112
+OK   [iv] X6 1-invF>=0   margin_lo=8.8804292e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9928897e+13
+  50-digit values: B=33.8080829541603  Psi=426.169817665726  Psi/k^1/4=0.134766729384  rho=0.167248175835  h0=0.840536316619  invF=0.999991119571
+  interval  Psi in [426.16981766572586052, 426.16981766572586052]
+OK   B                                              true=33.8080829541602713        stated=33.8081          dir=upper  nearest
+OK   Psi                                            true=426.169817665725861        stated=426.16           dir=lower  within 1 ulp
+OK   ratio                                          true=0.134766729384235643       stated=0.13476          dir=lower  within 1 ulp
+OK   W >= 427  (interval Psi_lo > 426)   Psi_lo=426.169817666 ceil=427.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table9 k=1e16  variant round9  pi= ('0.4345', '0.3273', '83930000000', '4.5e-6', '1.4e-5')  k= 1e16  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4345
+OK   [iv] C0 c1>0   margin_lo=0.3273
+OK   [iv] C0 eps>0   margin_lo=4.5e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999955
+OK   [iv] C0 om0>0   margin_lo=1.4e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=2.0752855e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.497901e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=233.53978
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499986
+OK   [iv] C5 1/2-w0>0   margin_lo=0.40559298
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850021
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997901e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.497901e-6
+OK   [iv] X4 h0>0   margin_lo=0.81118597
+OK   [iv] X5 invF>0   margin_lo=0.99999189
+OK   [iv] X6 1-invF>=0   margin_lo=8.1084075e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9998936e+15
+  50-digit values: B=32.4096691864567  Psi=1575.76154028113  Psi/k^1/4=0.157576154028  rho=0.168372729321  h0=0.811185969992  invF=0.999991891593
+  interval  Psi in [1575.7615402811250807, 1575.7615402811250807]
+OK   B                                              true=32.4096691864566708        stated=32.4097          dir=upper  nearest
+OK   Psi                                            true=1575.76154028112508        stated=1575.76          dir=lower  nearest
+OK   ratio                                          true=0.157576154028112508       stated=0.15757          dir=lower  within 1 ulp
+OK   W >= 1576  (interval Psi_lo > 1575)   Psi_lo=1575.76154028 ceil=1576.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table9 k=1e20  variant round9  pi= ('0.4457', '0.3324', '245800000000', '2.7e-6', '9.5e-6')  k= 1e20  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4457
+OK   [iv] C0 c1>0   margin_lo=0.3324
+OK   [iv] C0 eps>0   margin_lo=2.7e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999973
+OK   [iv] C0 om0>0   margin_lo=9.5e-6
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=6.0101655e-7
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4990478e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=313.49301
+OK   [iv] C4 1/2-om0>0   margin_lo=0.4999905
+OK   [iv] C5 1/2-w0>0   margin_lo=0.40066377
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099910102
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9999048e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4990478e-6
+OK   [iv] X4 h0>0   margin_lo=0.80132754
+OK   [iv] X5 invF>0   margin_lo=0.9999953
+OK   [iv] X6 1-invF>=0   margin_lo=4.7013795e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9999865e+19
+  50-digit values: B=31.9101623947356  Psi=16751.2826249648  Psi/k^1/4=0.16751282625  rho=0.168930909756  h0=0.801327535123  invF=0.999995298621
+  interval  Psi in [16751.282624964791109, 16751.282624964791109]
+OK   B                                              true=31.9101623947355573        stated=31.9102          dir=upper  nearest
+OK   Psi                                            true=16751.2826249647911        stated=16751.28         dir=lower  nearest
+OK   ratio                                          true=0.167512826249647911       stated=0.16751          dir=lower  nearest
+OK   W >= 16752  (interval Psi_lo > 16751)   Psi_lo=16751.282625 ceil=16752.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table9 k=1e30  variant round9  pi= ('0.4472', '0.3343', '547300000000000', '5.7e-8', '5.3e-7')  k= 1e30  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4472
+OK   [iv] C0 c1>0   margin_lo=0.3343
+OK   [iv] C0 eps>0   margin_lo=5.7e-8
+OK   [iv] C0 1-eps>0   margin_lo=0.99999994
+OK   [iv] C0 om0>0   margin_lo=5.3e-7
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.4808843e-6
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.499997e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=2162.6739
+OK   [iv] C4 1/2-om0>0   margin_lo=0.49999947
+OK   [iv] C5 1/2-w0>0   margin_lo=0.39999408
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099998088
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9999997e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.499997e-6
+OK   [iv] X4 h0>0   margin_lo=0.79998816
+OK   [iv] X5 invF>0   margin_lo=0.9999999
+OK   [iv] X6 1-invF>=0   margin_lo=9.9741983e-8
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9999997e+29
+  50-digit values: B=31.7249406323537  Psi=5363347.52640292  Psi/k^1/4=0.169603940665  rho=0.169634816433  h0=0.799988160235  invF=0.999999900258
+  interval  Psi in [5363347.5264029154036, 5363347.5264029154036]
+UNSF B                                              true=31.7249406323536809        stated=31.7249          dir=upper  nearest
+OK   Psi                                            true=5363347.5264029154         stated=5363347.52       dir=lower  within 1 ulp
+OK   ratio                                          true=0.169603940664632764       stated=0.16960          dir=lower  nearest
+OK   W >= 5363348  (interval Psi_lo > 5363347)   Psi_lo=5363347.5264 ceil=5363348.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET Thm4.4 hand k0=2.17e13  variant round13  pi= ('0.3674', '0.3012', '60000000000', '5e-6', '1.4e-5')  k= 2.17e13  c*= 0.1
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3674
+OK   [iv] C0 c1>0   margin_lo=0.3012
+OK   [iv] C0 eps>0   margin_lo=5.0e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.999995
+OK   [iv] C0 om0>0   margin_lo=1.4e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=9.5780836e-11
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4975155e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=181.53358
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499986
+OK   [iv] C5 1/2-w0>0   margin_lo=0.43249727
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.0009985001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997515e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4975155e-6
+OK   [iv] X4 h0>0   margin_lo=0.86499454
+OK   [iv] X5 invF>0   margin_lo=0.99999021
+OK   [iv] X6 1-invF>=0   margin_lo=9.7922714e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.0789946e+13
+  50-digit values: B=42.3094562648825  Psi=215.835304293715  Psi/k^1/4=0.100001738575  rho=0.137531374936  h0=0.864994535371  invF=0.999990207729
+  interval  Psi in [215.8353042937152009, 215.8353042937152009]
+OK   B                                              true=42.3094562648824832        stated=42.30946         dir=upper  nearest
+OK   Psi                                            true=215.835304293715201        stated=215.83530        dir=lower  nearest
+UNSF target                                         true=215.831551899643403        stated=215.83155        dir=upper  nearest
+UNSF D1                                             true=0.00557907226373860643     stated=0.0055791        dir=lower  nearest
+OK   u14D1                                          true=10.1255686217461083        stated=10.125           dir=lower  within 1 ulp
+OK   KW2B                                           true=0.0052310799553243046      stated=0.00524          dir=upper  within 1 ulp
+OK   rho                                            true=0.137531374936153763       stated=0.13753          dir=approx nearest
+OK   ratio                                          true=0.100001738575309667       stated=0.1000017        dir=lower  nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.0037523941
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.005579072264
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   10.125569 >= 0.00523108
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair13 c*=0.05 k0=3.28e11  variant round13  pi= ('0.1395', '0.1857', '8652000000', '1.2e-5', '2.3e-5')  k= 3.28e11  c*= 0.05
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.1395
+OK   [iv] C0 c1>0   margin_lo=0.1857
+OK   [iv] C0 eps>0   margin_lo=1.2e-5
+OK   [iv] C0 1-eps>0   margin_lo=0.999988
+OK   [iv] C0 om0>0   margin_lo=2.3e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=2.6007803e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.493454e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=42.359769
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499977
+OK   [iv] C5 1/2-w0>0   margin_lo=0.49025967
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850026
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9993454e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.493454e-6
+OK   [iv] X4 h0>0   margin_lo=0.98051935
+OK   [iv] X5 invF>0   margin_lo=0.99997324
+OK   [iv] X6 1-invF>=0   margin_lo=2.6764799e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.5534603e+11
+  50-digit values: B=68.6636616644766  Psi=37.8521404532418  Psi/k^1/4=0.0500175001343  rho=0.0960617301472  h0=0.980519347697  invF=0.999973235201
+  interval  Psi in [37.852140453241810252, 37.852140453241810252]
+OK   ratio                                          true=0.0500175001343409645      stated=0.0500175        dir=lower  nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.013243716
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.006847117153
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   4.3573126 >= 0.0007545729
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair13 c*=0.08 k0=3.53e12  variant round13  pi= ('0.2934', '0.2692', '38260000000', '6e-6', '1.6e-5')  k= 3.53e12  c*= 0.08
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.2934
+OK   [iv] C0 c1>0   margin_lo=0.2692
+OK   [iv] C0 eps>0   margin_lo=6.0e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.999994
+OK   [iv] C0 om0>0   margin_lo=1.6e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.2545792e-11
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4968882e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=129.49245
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499984
+OK   [iv] C5 1/2-w0>0   margin_lo=0.45694736
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9996888e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4968882e-6
+OK   [iv] X4 h0>0   margin_lo=0.91389471
+OK   [iv] X5 invF>0   margin_lo=0.99998754
+OK   [iv] X6 1-invF>=0   margin_lo=1.2463087e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.7267294e+12
+  50-digit values: B=47.3454500474123  Psi=109.665962772845  Psi/k^1/4=0.0800070356039  rho=0.129850253907  h0=0.9138947121  invF=0.999987536913
+  interval  Psi in [109.66596277284533353, 109.66596277284533353]
+OK   ratio                                          true=0.0800070356038981401      stated=0.0800070        dir=lower  nearest
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.0096437303
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.007410284579
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   8.5412427 >= 0.0033365125
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET pair13 c*=0.12 k0=3.78e14  variant round13  pi= ('0.4153', '0.3203', '76670000000', '4.6e-6', '1.3e-5')  k= 3.78e14  c*= 0.12
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4153
+OK   [iv] C0 c1>0   margin_lo=0.3203
+OK   [iv] C0 eps>0   margin_lo=4.6e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999954
+OK   [iv] C0 om0>0   margin_lo=1.3e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.4526159e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4978017e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=218.21334
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499987
+OK   [iv] C5 1/2-w0>0   margin_lo=0.41375123
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850015
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997802e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4978017e-6
+OK   [iv] X4 h0>0   margin_lo=0.82750246
+OK   [iv] X5 invF>0   margin_lo=0.99999145
+OK   [iv] X6 1-invF>=0   margin_lo=8.5463524e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=1.8892246e+14
+  50-digit values: B=39.7947145865581  Psi=529.158327165248  Psi/k^1/4=0.120008687186  rho=0.139884707808  h0=0.827502456117  invF=0.999991453648
+  interval  Psi in [529.1583271652475939, 529.1583271652475939]
+OK   ratio                                          true=0.120008687186418065       stated=0.1200086        dir=lower  within 1 ulp
+OK   [iv] Lemma 4.2 (i) Psi(k0) >= c* k0^{1/4}   margin=0.038304702
+OK   [iv] Lemma 4.2 (ii) D1 > 0   0.002955879501
+OK   [iv] Lemma 4.2 (iii) u0^{1/4} D1 >= K_W/(2B)   10.959789 >= 0.0066854034
+OK   rho(pi) > c* (needed for asymptotics)
+====================================================================================================
+SET table13 k=1e13  variant round13  pi= ('0.3421', '0.2907', '52015000000', '5.3e-6', '1.4e-5')  k= 1e13  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3421
+OK   [iv] C0 c1>0   margin_lo=0.2907
+OK   [iv] C0 eps>0   margin_lo=5.3e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999947
+OK   [iv] C0 om0>0   margin_lo=1.4e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=8.5872911e-12
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.497331e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=163.08416
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499986
+OK   [iv] C5 1/2-w0>0   margin_lo=0.44147262
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997331e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.497331e-6
+OK   [iv] X4 h0>0   margin_lo=0.88294524
+OK   [iv] X5 invF>0   margin_lo=0.99998943
+OK   [iv] X6 1-invF>=0   margin_lo=1.0567954e-5
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9479585e+12
+  50-digit values: B=43.8461259229373  Psi=163.919854351648  Psi/k^1/4=0.0921789081211  rho=0.135465397985  h0=0.882945244009  invF=0.999989432046
+  interval  Psi in [163.91985435164846747, 163.91985435164846747]
+UNSF B                                              true=43.8461259229373256        stated=43.8461          dir=upper  nearest
+OK   Psi                                            true=163.919854351648467        stated=163.91           dir=lower  within 1 ulp
+OK   ratio                                          true=0.0921789081211150087      stated=0.09217          dir=lower  within 1 ulp
+OK   W >= 164  (interval Psi_lo > 163)   Psi_lo=163.919854352 ceil=164.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table13 k=1e14  variant round13  pi= ('0.3993', '0.314', '70863000000', '4.8e-6', '1.3e-5')  k= 1e14  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.3993
+OK   [iv] C0 c1>0   margin_lo=0.314
+OK   [iv] C0 eps>0   margin_lo=4.8e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999952
+OK   [iv] C0 om0>0   margin_lo=1.3e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=5.9269411e-12
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4977138e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=205.70354
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499987
+OK   [iv] C5 1/2-w0>0   margin_lo=0.42026816
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850001
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997714e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4977138e-6
+OK   [iv] X4 h0>0   margin_lo=0.84053632
+OK   [iv] X5 invF>0   margin_lo=0.99999112
+OK   [iv] X6 1-invF>=0   margin_lo=8.8804292e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9928897e+13
+  50-digit values: B=40.5842257898805  Psi=355.015006450921  Psi/k^1/4=0.112265602392  rho=0.139323872794  h0=0.840536316613  invF=0.999991119571
+  interval  Psi in [355.01500645092053137, 355.01500645092053137]
+UNSF B                                              true=40.5842257898805287        stated=40.5842          dir=upper  nearest
+OK   Psi                                            true=355.015006450920531        stated=355.01           dir=lower  within 1 ulp
+OK   ratio                                          true=0.112265602392427907       stated=0.11226          dir=lower  within 1 ulp
+OK   W >= 356  (interval Psi_lo > 355)   Psi_lo=355.015006451 ceil=356.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table13 k=1e16  variant round13  pi= ('0.4345', '0.3276', '83930000000', '4.5e-6', '1.3e-5')  k= 1e16  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4345
+OK   [iv] C0 c1>0   margin_lo=0.3276
+OK   [iv] C0 eps>0   margin_lo=4.5e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.9999955
+OK   [iv] C0 om0>0   margin_lo=1.3e-5
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=2.0752855e-10
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4978991e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=233.53948
+OK   [iv] C4 1/2-om0>0   margin_lo=0.499987
+OK   [iv] C5 1/2-w0>0   margin_lo=0.40559298
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099850021
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9997899e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4978991e-6
+OK   [iv] X4 h0>0   margin_lo=0.81118597
+OK   [iv] X5 invF>0   margin_lo=0.99999189
+OK   [iv] X6 1-invF>=0   margin_lo=8.1084075e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9998936e+15
+  50-digit values: B=38.9055015683238  Psi=1312.66668009347  Psi/k^1/4=0.131266668009  rho=0.140260623673  h0=0.811185969989  invF=0.999991891593
+  interval  Psi in [1312.6666800934732659, 1312.6666800934732659]
+UNSF B                                              true=38.9055015683238276        stated=38.9055          dir=upper  nearest
+OK   Psi                                            true=1312.66668009347327        stated=1312.66          dir=lower  within 1 ulp
+OK   ratio                                          true=0.131266668009347327       stated=0.13126          dir=lower  within 1 ulp
+OK   W >= 1313  (interval Psi_lo > 1312)   Psi_lo=1312.66668009 ceil=1313.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table13 k=1e20  variant round13  pi= ('0.4458', '0.3325', '192800000000', '3e-6', '9.5e-6')  k= 1e20  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4458
+OK   [iv] C0 c1>0   margin_lo=0.3325
+OK   [iv] C0 eps>0   margin_lo=3.0e-6
+OK   [iv] C0 1-eps>0   margin_lo=0.999997
+OK   [iv] C0 om0>0   margin_lo=9.5e-6
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=4.8471832e-7
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4988572e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=295.07181
+OK   [iv] C4 1/2-om0>0   margin_lo=0.4999905
+OK   [iv] C5 1/2-w0>0   margin_lo=0.40061919
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.00099898472
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9998857e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4988572e-6
+OK   [iv] X4 h0>0   margin_lo=0.80123838
+OK   [iv] X5 invF>0   margin_lo=0.99999467
+OK   [iv] X6 1-invF>=0   margin_lo=5.3331432e-6
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.999985e+19
+  50-digit values: B=38.3368551709148  Psi=13948.5192843777  Psi/k^1/4=0.139485192844  rho=0.140596107838  h0=0.801238382958  invF=0.999994666857
+  interval  Psi in [13948.519284377693548, 13948.519284377693548]
+OK   B                                              true=38.3368551709147919        stated=38.3369          dir=upper  nearest
+OK   Psi                                            true=13948.5192843776935        stated=13948.51         dir=lower  within 1 ulp
+OK   ratio                                          true=0.139485192843776935       stated=0.13948          dir=lower  within 1 ulp
+OK   W >= 13949  (interval Psi_lo > 13948)   Psi_lo=13948.5192844 ceil=13949.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SET table13 k=1e30  variant round13  pi= ('0.4472', '0.3343', '428700000000000', '6.4e-8', '5.3e-7')  k= 1e30  c*= None
+OK   C0 y0 is a positive integer
+OK   [iv] C0 c0>0   margin_lo=0.4472
+OK   [iv] C0 c1>0   margin_lo=0.3343
+OK   [iv] C0 eps>0   margin_lo=6.4e-8
+OK   [iv] C0 1-eps>0   margin_lo=0.99999994
+OK   [iv] C0 om0>0   margin_lo=5.3e-7
+OK   [iv] C1 betabar-alpha(y0)>=0   margin_lo=1.4784014e-6
+OK   [iv] C2 1.5e-6-beta(y0)>=0   margin_lo=1.4999965e-6
+OK   [iv] C3 c0 y0^{1/4}-c1(1-eps)^{-3/4}>0   margin_lo=2034.5521
+OK   [iv] C4 1/2-om0>0   margin_lo=0.49999947
+OK   [iv] C5 1/2-w0>0   margin_lo=0.39999408
+OK   [iv] C6 cos(2alpha0)/2-delta>=0   margin_lo=0.49999
+OK   [iv] X1 1e-3-alpha(y0)>=0 (sec x-1<=0.50001x^2 range)   margin_lo=0.0009999784
+OK   [iv] X2 1e-4-beta((1-eps)y0)>=0   margin_lo=9.9999996e-5
+OK   [iv] X3 1.5e-6-beta((1-eps)y0)>=0 (range of sin a+1-cos a<=1.0001a)   margin_lo=1.4999965e-6
+OK   [iv] X4 h0>0   margin_lo=0.79998816
+OK   [iv] X5 invF>0   margin_lo=0.99999989
+OK   [iv] X6 1-invF>=0   margin_lo=1.1290208e-7
+OK   [iv] C7 (1-eps)y1-(y0+1)>=0   margin_lo=4.9999997e+29
+  50-digit values: B=38.1280482307735  Psi=4462691.45351973  Psi/k^1/4=0.141122694877  rho=0.141146864863  h0=0.799988160234  invF=0.999999887098
+  interval  Psi in [4462691.4535197303098, 4462691.4535197303098]
+UNSF B                                              true=38.1280482307735452        stated=38.1280          dir=upper  nearest
+OK   Psi                                            true=4462691.45351973031        stated=4462691.45       dir=lower  nearest
+OK   ratio                                          true=0.141122694876897965       stated=0.14112          dir=lower  nearest
+OK   W >= 4462692  (interval Psi_lo > 4462691)   Psi_lo=4462691.45352 ceil=4462692.0
+OK   stated W equals ceil(Psi) (not understated)
+====================================================================================================
+SECTION Q. independent quadrature checks of (3.1), (3.2), Gamma, invF at pi*, k0 (round9)
+OK   Omega_W (quadrature) <= (3.2) bound   quad=0.379414805519 UB=0.379415184934
+OK   Omega_W quadrature                             true=0.379414805519201899       stated=0.3794148        dir=approx nearest
+OK   Omega_W bound                                  true=0.379415184934019686       stated=0.3794152        dir=upper  nearest
+OK   Gamma closed form vs quadrature (rel 1e-20)   2.84711787547302e-5
+OK   invF step: inner integral >= bound at y=4.2108e+10   ratio=1.00000000002
+OK   invF step: inner integral >= bound at y=4.2108e+11   ratio=1.00000737094
+OK   invF step: inner integral >= bound at y=4.2108e+13   ratio=1.00000818175
+OK   invF step: inner integral >= bound at y=2.30999e+12   ratio=1.00000804065
+OK   (3.1) integer-part >= continuous   int=5647.48557862663036 cont=5647.48557862566413
+OK   l(H) integer-part version                      true=5647.48557862663036        stated=5647.48557862663 dir=approx nearest
+OK   l(H) continuous version                        true=5647.48557862566413        stated=5647.48557862566 dir=approx nearest
+OK   exact cell sum 2*sum_m int_{m+w0}^{m+1-w0} y^{-3/4} >= (3.1) bound   exact=5647.48557864514 bound=5647.48557862663 rel.slack=3.2777e-12
+OK   cell inequality at m=42108000000.0   1.7811e-11
+OK   cell inequality at m=2309986601996.0   3.2468e-13
+OK   (3.1) and l(H_t)=l(H_b) on 300 random small exact examples (odd/even k, non-integer y0)   bad=0
+OK   toy Tonelli II: M >= (c0 invF/(2c1)) int f dl   LHS=8.6453559218 RHS=8.37600309716 ratio=1.03215768
+====================================================================================================
+SECTION A. asymptotic constants (PROOF 4.2)
+OK   c_inf exact A: two closed forms agree
+OK   c_inf exact A                                  true=0.169652411220561015       stated=0.16965241       dir=lower  nearest
+OK   c0_opt                                         true=0.447204651317041657       stated=0.44720465       dir=approx nearest
+OK   c_inf (task: 0.169652)                         true=0.169652411220561015       stated=0.169652         dir=lower  nearest
+OK   DEFS formula c (c0=1/sqrt5)                    true=0.169657500903598311       stated=0.16965750       dir=approx nearest
+OK   c_inf rounded A: two closed forms agree
+OK   c_inf rounded A                                true=0.169650294039857813       stated=0.16965029       dir=lower  nearest
+OK   c13_inf exact: two closed forms agree
+OK   c13_inf exact                                  true=0.141159338702368572       stated=0.14115933       dir=lower  within 1 ulp
+OK   c13_inf (task: 0.141159)                       true=0.141159338702368572       stated=0.141159         dir=lower  nearest
+OK   c13_inf rounded: two closed forms agree
+OK   c13_inf rounded                                true=0.141158983360575219       stated=0.14115898       dir=lower  nearest
+====================================================================================================
+SECTION D. corollary 4.5 integer claims
+OK   10^4*146^4+1 <= 4.62e12 < 10^4*147^4+1
+OK   10^4*215^4+1 <= 2.17e13 < 10^4*216^4+1
+OK   ceil(0.1 k0^{1/4}) = 147 at k0=4.62e12   146.608953547199
+OK   ceil(0.1 k0^{1/4}) = 216 at k0=2.17e13   215.831551899643
+OK   c>=2065 => (c/0.16)^4 >= 2.77e16 (and 2064 fails)
+INFO first integer c for which the (0.16, 2.77e16) pair gives a smaller k-threshold than (0.1, 4.62e12): 1291
+====================================================================================================
+SECTION V. comparison with manuscript v11: W >= max(1, F(k)), F(k)=1.99954(log k-13.06675)/30.418; kappa=0.0353 (W>=0.0353 log k)
+k=4.62e12   v11 F(k)=1.05799    0.0353 ln k=1.0294     (W>=2)   v1.1 0.033 ln k=0.96233    new Psi=146.6242933    (W>=147)  ratio new/old=138.59
+k=1e13      v11 F(k)=1.10875    0.0353 ln k=1.05666    (W>=2)   v1.1 0.033 ln k=0.98781    new Psi=196.7738911    (W>=197)  ratio new/old=177.47
+k=1e14      v11 F(k)=1.26011    0.0353 ln k=1.13794    (W>=2)   v1.1 0.033 ln k=1.0638     new Psi=426.1698177    (W>=427)  ratio new/old=338.2
+k=1e16      v11 F(k)=1.56283    0.0353 ln k=1.3005     (W>=2)   v1.1 0.033 ln k=1.2158     new Psi=1575.76154     (W>=1576)  ratio new/old=1008.3
+k=1e20      v11 F(k)=2.16828    0.0353 ln k=1.62563    (W>=3)   v1.1 0.033 ln k=1.5197     new Psi=16751.28262    (W>=16752)  ratio new/old=7725.6
+k=1e30      v11 F(k)=3.68189    0.0353 ln k=2.43844    (W>=4)   v1.1 0.033 ln k=2.2796     new Psi=5363347.526    (W>=5363348)  ratio new/old=1.4567e+6
+OK   v11 F(1e13) quoted 1.1087                      true=1.10874987389010071        stated=1.1087           dir=approx nearest
+OK   v11 gives s(k^2-4)=k only for log k > 73.92 (exact threshold 73.916745)
+OK   log(4.62e12) >= 29.16 (quoted)   29.16141582
+OK   log10(4.62e12) quoted 12.665                   true=12.6646419755561255        stated=12.665           dir=approx nearest
+====================================================================================================
+TOTAL checks=623  fails=0  discrepancies=0  unsafe_roundings=11   time=191.6s
+  UNSAFE {'name': 'invF', 'true': '0.99998818515041578732', 'stated': '0.99998819', 'direction': 'lower'}
+  UNSAFE {'name': 'OmUB', 'true': '0.37941518493401968608', 'stated': '0.379415', 'direction': 'upper'}
+  UNSAFE {'name': 'target', 'true': '146.6089535471987367', 'stated': '146.60895', 'direction': 'upper'}
+  UNSAFE {'name': 'D1', 'true': '0.0086429841394297952434', 'stated': '0.0086430', 'direction': 'lower'}
+  UNSAFE {'name': 'B', 'true': '31.724940632353680949', 'stated': '31.7249', 'direction': 'upper'}
+  UNSAFE {'name': 'target', 'true': '215.83155189964340286', 'stated': '215.83155', 'direction': 'upper'}
+  UNSAFE {'name': 'D1', 'true': '0.0055790722637386064272', 'stated': '0.0055791', 'direction': 'lower'}
+  UNSAFE {'name': 'B', 'true': '43.846125922937325556', 'stated': '43.8461', 'direction': 'upper'}
+  UNSAFE {'name': 'B', 'true': '40.584225789880528712', 'stated': '40.5842', 'direction': 'upper'}
+  UNSAFE {'name': 'B', 'true': '38.905501568323827608', 'stated': '38.9055', 'direction': 'upper'}
+  UNSAFE {'name': 'B', 'true': '38.128048230773545224', 'stated': '38.1280', 'direction': 'upper'}

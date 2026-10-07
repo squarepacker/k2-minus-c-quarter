@@ -1,0 +1,7 @@
+﻿DEFS P2 2nd inequality sin a + 1 - cos a <= 1.0001 a holds exactly for a <= 0.000200013335778; at a=pi/4: lhs=1.0 rhs=0.7854767
+case drift(edge,ncol=5) k 33 delta 1/10 c0 3/5 c1 1/100 y0 3/2 eps 1/2 s~ 8.211989553297464
+alpha_max 0.4898979486 alpha(s) 0.209376076 w0 0.44738230366540876
+Z id 5 centre ('1531242289/99258540', '2420525416196910876596763/486595501916016968987500') t 1/4000 a 0.00049999999 ymin 4.474159827229552 ymax 5.474659702198309 witness y 5.474409702245184 frac 0.47440970224518436
+   F0 contact on Z: x in (109/6, 47862877439066639559773/2627268900986056048860) ~ (18.166667, 18.217731), contact height ~ 4.474644, prior R1-won entries (id, tilt, truncates F_s): [(0, '0.475626', True), (1, '0.475626', True), (2, '0.475626', True), (3, '0.475626', True), (4, '0.475626', True)]
+column tilt 0.4756260611 t 303/1250 number 5
+live F_s contacts on Z(s): []

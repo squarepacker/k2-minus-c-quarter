@@ -1,0 +1,53 @@
+====================================================================================================
+(1)+(2) closed form vs independent numerical maximisation of the limit functional
+exact9   numeric: c0=0.447204651317 c1=0.334366808645 value=0.169652411220561 | closed: c0=0.447204651317 c1=0.334366808645 c_inf=0.169652411220561 | |diff|=3.95e-42
+   DEFS formula (c0=1/sqrt5, h0->1-c0^2): 0.169657500904 ; relative difference to c_inf: 3.0e-5
+   value of the true limit functional at c0=1/sqrt5 (with lambda, kappa): 0.169652411178
+round9   numeric: c0=0.447204651317 c1=0.334365232609 value=0.169650294039858 | closed: c0=0.447204651317 c1=0.334365232609 c_inf=0.169650294039858 | |diff|=1.78e-42
+exact13  numeric: c0=0.447204651317 c1=0.334366808672 value=0.141159338702369 | closed: c0=0.447204651317 c1=0.334366808672 c_inf=0.141159338702369 | |diff|=8.37e-42
+round13  numeric: c0=0.447204651317 c1=0.334366808803 value=0.141158983360575 | closed: c0=0.447204651317 c1=0.334366808803 c_inf=0.141158983360575 | |diff|=2.07e-43
+====================================================================================================
+(3) Theorem 4.1(i) family: c0=c0_opt, c1=sqrt(A c0/(4A')), eps=y0^{-1/2}, om0=y0^{-1/4} (round9 constants)
+y0=1e12  rho=0.169123804596  stated=0.169124  alpha(y0)=4.472e-7  C1,C2 ok=True  increasing=True
+y0=1e14  rho=0.169560869876  stated=None  alpha(y0)=4.472e-8  C1,C2 ok=True  increasing=True
+y0=1e16  rho=0.169629749955  stated=0.169630  alpha(y0)=4.472e-9  C1,C2 ok=True  increasing=True
+y0=1e18  rho=0.16964457129  stated=None  alpha(y0)=4.472e-10  C1,C2 ok=True  increasing=True
+y0=1e20  rho=0.169648561742  stated=0.169649  alpha(y0)=4.472e-11  C1,C2 ok=True  increasing=True
+y0=1e25  rho=0.169650198525  stated=None  alpha(y0)=1.414e-13  C1,C2 ok=True  increasing=True
+y0=1e30  rho=0.169650288675  stated=0.16965029  alpha(y0)=4.472e-16  C1,C2 ok=True  increasing=True
+y0=1e40  rho=0.169650294023  stated=0.16965029  alpha(y0)=4.472e-21  C1,C2 ok=True  increasing=True
+y0=1e60  rho=0.16965029404  stated=None  alpha(y0)=4.472e-31  C1,C2 ok=True  increasing=True
+c_inf(round9) = 0.169650294039858 ; last family value below it: True
+====================================================================================================
+(4a) sup over admissible (c0,c1,eps,om0) of rho(pi) at fixed y0 (round9), own Nelder-Mead
+y0=10^10.6  sup rho ~ 0.1568311481  (c0=0.299289 c1=0.271620 eps=6.68e-06 om0=1.7e-05)  < c_inf=0.1696502940 : True
+y0=10^11    sup rho ~ 0.1685280540  (c0=0.444848 c1=0.331292 eps=4.22e-06 om0=1.33e-05)  < c_inf=0.1696502940 : True
+y0=10^12    sup rho ~ 0.1692918890  (c0=0.446453 c1=0.333383 eps=1.33e-06 om0=5.61e-06)  < c_inf=0.1696502940 : True
+y0=10^14    sup rho ~ 0.1696141764  (c0=0.447129 c1=0.334266 eps=1.33e-07 om0=9.98e-07)  < c_inf=0.1696502940 : True
+y0=10^16    sup rho ~ 0.1696466546  (c0=0.447197 c1=0.334355 eps=1.33e-08 om0=1.78e-07)  < c_inf=0.1696502940 : True
+y0=10^20    sup rho ~ 0.1696502563  (c0=0.447205 c1=0.334365 eps=1.34e-10 om0=5.62e-09)  < c_inf=0.1696502940 : True
+y0=10^30    sup rho ~ 0.1696602786  (c0=0.447204 c1=0.334366 eps=1.28e-22 om0=9.11e-16)  < c_inf=0.1696502940 : False
+(4b) random admissible (pi,k): check Psi_pi(k) < c_inf k^{1/4} (Theorem 4.1(ii)); also K_w=13
+   round9: admissible samples=17289  violations of Psi < c_inf k^{1/4}: 0  max Psi/k^{1/4} = 0.1694516641 (c_inf=0.169650294)
+   round13: admissible samples=17382  violations of Psi < c_inf k^{1/4}: 0  max Psi/k^{1/4} = 0.1410661751 (c_inf=0.1411589834)
+====================================================================================================
+(5) c0 = 0.4472 vs alpha(y0) <= 1.5e-6
+   y0 must be >= (0.4472/1.5e-6)^2 = 88883484444.4 ; c0_opt=0.4472046513 needs y0 >= 88885333404.3
+   table row k=1e30 (K_w*=9 table): y0=547300000000000 alpha(y0)=1.91157e-8 <= 1.5e-6: True
+   table row k=1e30 (K_w=13 table): y0=428700000000000 alpha(y0)=2.15986e-8 <= 1.5e-6: True
+   at k0=4.62e12: (y0+1)^{1/4} for y0=(c0_opt/1.5e-6)^2 is 546.019 vs ((k0/2-3))^{1/4}=1232.83
+====================================================================================================
+(6) probe of the k0-minimality remark (not part of the proof): maximise Psi_pi(k)/k^{1/4} at given k
+   round9 k=4.62e12: optimiser best Psi/k^1/4 = 0.100010787 ; rounded pi=('0.307757', '0.275369', '42095320000', '5.794e-06', '1.671e-05') ; interval Psi - c*k^1/4 >= 0.015793572 ; C1 ok=True
+   round9 k=4.61e12: optimiser best Psi/k^1/4 = 0.099979309 ; rounded pi=('0.307646', '0.275320', '42065138000', '5.795e-06', '1.671e-05') ; interval Psi - c*k^1/4 >= -0.030427999 ; C1 ok=True
+   round9 k=4.60e12: optimiser best Psi/k^1/4 = 0.099947754 ; rounded pi=('0.307535', '0.275270', '42034790000', '5.797e-06', '1.672e-05') ; interval Psi - c*k^1/4 >= -0.076624193 ; C1 ok=True
+   round13 k=2.17e13: optimiser best Psi/k^1/4 = 0.100002898 ; rounded pi=('0.367418', '0.301230', '59998416000', '5.04e-06', '1.396e-05') ; interval Psi - c*k^1/4 >= 0.0061906574 ; C1 ok=True
+   round13 k=2.16e13: optimiser best Psi/k^1/4 = 0.099959564 ; rounded pi=('0.367289', '0.301177', '59956401000', '5.041e-06', '1.396e-05') ; interval Psi - c*k^1/4 >= -0.08727321 ; C1 ok=True
+time 706.6s
+====================================================================================================
+NOTE (added 2026-10-06 after p8x_asym_fix.py): the line "y0=10^30 sup rho ~ 0.1696602786 ... False" in (4a) is a
+RETRACTED ARTEFACT of THIS script (objective evaluated at mp.dps=25; for eps=1.28e-22 the difference 1-(1-eps)^{3/4}
+cancels catastrophically, giving invF=1.0000484>1, which is impossible since invF<=1 is proved).
+At 50/80 digits and in 50-digit interval arithmetic the same point has invF=0.99999998437, rho=0.16965029253 < c_inf.
+Re-optimisation with a cancellation-free invF at 60 digits (p8x_asym_fix_out.txt): sup rho < c_inf at y0=1e12,1e20,1e30,1e40,
+confirmed by 120-digit intervals. Not an issue of PROOF_P8.

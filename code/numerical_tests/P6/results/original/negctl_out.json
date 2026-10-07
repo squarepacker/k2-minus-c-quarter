@@ -1,0 +1,63 @@
+{
+ "none_configs_with_violation": {
+  "n": 0
+ },
+ "no_R1": {
+  "L4_injectivity": 16,
+  "L6_sharp": 12,
+  "R1_entry_not_self_winner": 2
+ },
+ "no_R1_configs_with_violation": {
+  "n": 14
+ },
+ "T_before_M_configs_with_violation": {
+  "n": 0
+ },
+ "no_R2": {
+  "L5_hull_outside_botY": 88,
+  "L6_c_not_on_botY": 82,
+  "L6_raycast": 112,
+  "L5_t_range": 18,
+  "L5_square_in_Omega": 21,
+  "L6_sharp": 4,
+  "L6_exc_gt_bound": 4,
+  "L6_V_hits_square": 19,
+  "L5_outside_box": 10,
+  "L6_defs_form": 1
+ },
+ "no_R2_configs_with_violation": {
+  "n": 30
+ },
+ "mut_noDtrim": {
+  "L6_c_not_on_botY": 116,
+  "L6_raycast": 130
+ },
+ "mut_noDtrim_configs_with_violation": {
+  "n": 26
+ },
+ "mut_widen": {
+  "L5_t_range": 285,
+  "L5_hull_outside_botY": 688,
+  "L5_outside_box": 219,
+  "L5_square_in_Omega": 559,
+  "L6_c_not_on_botY": 688,
+  "L6_V_hits_square": 559,
+  "L6_raycast": 889,
+  "L5_hull_outside_topX": 190,
+  "L6_b_not_upper_end": 351,
+  "L6_raycast_start_inside": 186,
+  "L6_gv_gt_delta_over_den": 51,
+  "L6_exc_gt_bound": 9
+ },
+ "mut_widen_configs_with_violation": {
+  "n": 40
+ },
+ "cases": {
+  "none": 40,
+  "no_R1": 40,
+  "T_before_M": 40,
+  "no_R2": 40,
+  "mut_noDtrim": 40,
+  "mut_widen": 40
+ }
+}
