@@ -61,6 +61,6 @@ Developed with extensive assistance from Claude (Anthropic), including the proof
 
 ## How to cite
 
-Ryu, Sungjoon. *Packing k²−c unit squares: a lower bound of order k^{1/4} for the deficiency.* Preprint, version 1.0, 2026. https://github.com/squarepacker/k2-minus-c-power. DOI (version 1.0): https://doi.org/10.5281/zenodo.23211207; all versions: https://doi.org/10.5281/zenodo.23211206.
+Ryu, Sungjoon. *Packing k²−c unit squares: a lower bound of order k^{1/4} for the deficiency.* Preprint, version 1.0, 2026. https://github.com/squarepacker/k2-minus-c-power. DOI (version 1.0): https://doi.org/10.5281/zenodo.23211207; all versions: https://doi.org/10.5281/zenodo.23211206. Paper (PDF): https://doi.org/10.5281/zenodo.23212643.
 
 [R] Ryu, Sungjoon. *Packing k²−c unit squares: s(k²−c) = k for all large k.* Preprint, version 1.2, 2026. https://doi.org/10.5281/zenodo.23194104; programs and data: https://doi.org/10.5281/zenodo.23194031 and https://github.com/squarepacker/k2-minus-c (release v1.2)
