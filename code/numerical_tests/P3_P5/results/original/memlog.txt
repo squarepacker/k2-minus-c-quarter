@@ -1,0 +1,200 @@
+2026-10-06T13:36:20 START free=1679880KB geomsearch.py 43 1500
+2026-10-06T13:36:20 END exit=1 geomsearch.py 43 1500
+2026-10-06T13:36:21 START free=1770812KB geomsearch.py 44 1800
+2026-10-06T13:36:21 END exit=1 geomsearch.py 44 1800
+2026-10-06T13:38:23 START free=1688512KB geomsearch.py 43 1500
+2026-10-06T13:38:24 START free=1775008KB geomsearch.py 44 2400
+2026-10-06T13:41:58 LOW free=1265660KB waited=0.0min for xrun.py smoke 120
+2026-10-06T13:43:59 LOW free=882932KB waited=2.0min for xrun.py smoke 120
+2026-10-06T13:45:59 LOW free=1393772KB waited=4.0min for xrun.py smoke 120
+2026-10-06T13:48:00 LOW free=1310288KB waited=6.0min for xrun.py smoke 120
+2026-10-06T13:50:00 LOW free=826288KB waited=8.0min for xrun.py smoke 120
+2026-10-06T13:51:12 END exit=0 geomsearch.py 43 1500
+2026-10-06T13:52:01 LOW free=867416KB waited=10.1min for xrun.py smoke 120
+2026-10-06T13:54:01 LOW free=924908KB waited=12.1min for xrun.py smoke 120
+2026-10-06T13:56:01 LOW free=917092KB waited=14.1min for xrun.py smoke 120
+2026-10-06T13:58:02 LOW free=1038248KB waited=16.1min for xrun.py smoke 120
+2026-10-06T14:00:02 LOW free=811332KB waited=18.1min for xrun.py smoke 120
+2026-10-06T14:02:03 LOW free=1062308KB waited=20.1min for xrun.py smoke 120
+2026-10-06T14:04:03 LOW free=785628KB waited=22.1min for xrun.py smoke 120
+2026-10-06T14:06:04 LOW free=926520KB waited=24.1min for xrun.py smoke 120
+2026-10-06T14:08:04 LOW free=985392KB waited=26.1min for xrun.py smoke 120
+2026-10-06T14:10:05 LOW free=894256KB waited=28.1min for xrun.py smoke 120
+2026-10-06T14:12:05 LOW free=1161544KB waited=30.1min for xrun.py smoke 120
+2026-10-06T14:14:06 LOW free=1055432KB waited=32.1min for xrun.py smoke 120
+2026-10-06T14:16:06 LOW free=912076KB waited=34.1min for xrun.py smoke 120
+2026-10-06T14:18:06 LOW free=693096KB waited=36.2min for xrun.py smoke 120
+2026-10-06T14:19:09 END exit=0 geomsearch.py 44 2400
+2026-10-06T14:20:07 LOW free=920624KB waited=38.2min for xrun.py smoke 120
+2026-10-06T14:22:07 LOW free=1059108KB waited=40.2min for xrun.py smoke 120
+  -> 40 min low: would run tiny only; aborting this run
+2026-10-06T14:23:29 TINY(low-mem, <1min, <100MB) free=991492KB xrun.py smoke 45
+2026-10-06T14:23:30 END exit=0 free=982692KB xrun.py smoke 45
+2026-10-06T14:23:44 TINY(low-mem, <1min, <100MB) free=952240KB xrun.py valley 45 0
+2026-10-06T14:23:48 END exit=0 free=945772KB xrun.py valley 45 0
+2026-10-06T14:24:08 TINY(low-mem, <1min, <100MB) free=938280KB xrun.py bigvalley 50 0
+2026-10-06T14:24:10 END exit=0 free=941076KB xrun.py bigvalley 50 0
+2026-10-06T14:24:12 TINY(low-mem, <1min, <100MB) free=956204KB xrun.py merge 50 0
+2026-10-06T14:25:03 END exit=0 free=900128KB xrun.py merge 50 0
+2026-10-06T14:25:04 TINY(low-mem, <1min, <100MB) free=876908KB xrun.py merge 50 2714
+2026-10-06T14:25:28 END exit=0 free=866720KB xrun.py merge 50 2714
+2026-10-06T14:25:47 TINY(low-mem, <1min, <100MB) free=850412KB summarize.py
+2026-10-06T14:25:48 END exit=0 free=838312KB summarize.py
+2026-10-06T14:26:23 TINY(low-mem, <1min, <100MB) free=806844KB xrun.py fan 50 0
+2026-10-06T14:26:43 END exit=0 free=800676KB xrun.py fan 50 0
+2026-10-06T14:26:45 TINY(low-mem, <1min, <100MB) free=806132KB xrun.py three 50 0
+2026-10-06T14:26:55 END exit=0 free=1355580KB xrun.py three 50 0
+2026-10-06T14:26:57 TINY(low-mem, <1min, <100MB) free=1283444KB xrun.py mechA 50 0
+2026-10-06T14:27:01 END exit=0 free=1112460KB xrun.py mechA 50 0
+2026-10-06T14:27:09 TINY(low-mem, <1min, <100MB) free=1100956KB xrun.py strip 50 0
+2026-10-06T14:27:36 END exit=0 free=988100KB xrun.py strip 50 0
+2026-10-06T14:27:38 TINY(low-mem, <1min, <100MB) free=1049396KB xrun.py near45 50 0
+2026-10-06T14:28:29 END exit=0 free=1037768KB xrun.py near45 50 0
+2026-10-06T14:28:30 TINY(low-mem, <1min, <100MB) free=1032456KB xrun.py near45 50 57
+2026-10-06T14:29:23 END exit=0 free=984984KB xrun.py near45 50 57
+2026-10-06T14:29:24 TINY(low-mem, <1min, <100MB) free=971200KB xrun.py near45 50 68
+2026-10-06T14:30:17 END exit=0 free=981692KB xrun.py near45 50 68
+2026-10-06T14:30:18 TINY(low-mem, <1min, <100MB) free=984100KB xrun.py near45 50 68
+2026-10-06T14:31:10 END exit=0 free=969456KB xrun.py near45 50 68
+2026-10-06T14:31:11 TINY(low-mem, <1min, <100MB) free=1002768KB summarize.py
+2026-10-06T14:31:12 END exit=0 free=1000196KB summarize.py
+2026-10-06T14:32:15 TINY(low-mem, <1min, <100MB) free=1063384KB xrun.py rowjam 50 0
+2026-10-06T14:32:16 END exit=1 free=1058212KB xrun.py rowjam 50 0
+2026-10-06T14:32:25 TINY(low-mem, <1min, <100MB) free=1038648KB xrun.py rowjam 50 0
+2026-10-06T14:33:16 END exit=0 free=1225616KB xrun.py rowjam 50 0
+2026-10-06T14:33:48 TINY(low-mem, <1min, <100MB) free=1080796KB xrun.py mrand 50 0
+2026-10-06T14:33:49 TINY(low-mem, <1min, <100MB) free=1025268KB xrun.py rowjam 50 0
+2026-10-06T14:34:14 TINY(low-mem, <1min, <100MB) free=1117848KB geomsearch.py starmin 50 0.3
+2026-10-06T14:34:36 END exit=0 free=1115164KB geomsearch.py starmin 50 0.3
+2026-10-06T14:34:39 END exit=0 free=1181192KB xrun.py mrand 50 0
+2026-10-06T14:34:41 END exit=0 free=1235128KB xrun.py rowjam 50 0
+2026-10-06T14:34:41 TINY(low-mem, <1min, <100MB) free=1252284KB xrun.py mrand 50 1299
+2026-10-06T14:34:42 TINY(low-mem, <1min, <100MB) free=1211184KB xrun.py rowjam 50 143
+2026-10-06T14:35:03 TINY(low-mem, <1min, <100MB) free=1099780KB geomsearch.py starmin 50 0.01
+2026-10-06T14:35:25 END exit=0 free=1076236KB geomsearch.py starmin 50 0.01
+2026-10-06T14:35:26 TINY(low-mem, <1min, <100MB) free=1087636KB geomsearch.py starmin 50 0.9
+2026-10-06T14:35:32 END exit=0 free=1037512KB xrun.py mrand 50 1299
+2026-10-06T14:35:33 END exit=0 free=1054308KB xrun.py rowjam 50 143
+2026-10-06T14:35:33 TINY(low-mem, <1min, <100MB) free=1087524KB xrun.py mrand 50 2567
+2026-10-06T14:35:34 TINY(low-mem, <1min, <100MB) free=1058456KB xrun.py rowjam 50 283
+2026-10-06T14:35:49 END exit=0 free=1112696KB geomsearch.py starmin 50 0.9
+2026-10-06T14:35:50 TINY(low-mem, <1min, <100MB) free=1070804KB geomsearch.py starmin 50 1.4
+2026-10-06T14:36:13 END exit=0 free=1066236KB geomsearch.py starmin 50 1.4
+2026-10-06T14:36:23 TINY(low-mem, <1min, <100MB) free=1063884KB geomsearch.py star 50 1e-6
+2026-10-06T14:36:24 END exit=0 free=1034648KB xrun.py mrand 50 2567
+2026-10-06T14:36:26 END exit=0 free=1042344KB xrun.py rowjam 50 283
+2026-10-06T14:36:26 TINY(low-mem, <1min, <100MB) free=1059688KB xrun.py mrand 50 3771
+2026-10-06T14:36:27 TINY(low-mem, <1min, <100MB) free=1033620KB xrun.py rowjam 50 421
+2026-10-06T14:36:50 END exit=0 free=983232KB geomsearch.py star 50 1e-6
+2026-10-06T14:36:52 TINY(low-mem, <1min, <100MB) free=989444KB geomsearch.py star 50 0.3
+2026-10-06T14:37:17 END exit=0 free=928212KB xrun.py mrand 50 3771
+2026-10-06T14:37:17 END exit=0 free=978452KB geomsearch.py star 50 0.3
+2026-10-06T14:37:18 END exit=0 free=1055716KB xrun.py rowjam 50 421
+2026-10-06T14:37:18 TINY(low-mem, <1min, <100MB) free=1080116KB xrun.py mrand 50 4779
+2026-10-06T14:37:19 TINY(low-mem, <1min, <100MB) free=1030240KB geomsearch.py star 50 1.4
+2026-10-06T14:37:20 TINY(low-mem, <1min, <100MB) free=1015940KB xrun.py rowjam 50 556
+2026-10-06T14:37:46 END exit=0 free=964804KB geomsearch.py star 50 1.4
+2026-10-06T14:38:05 TINY(low-mem, <1min, <100MB) free=776380KB geomsearch.py star 50 1e-6
+2026-10-06T14:38:09 END exit=0 free=742908KB xrun.py mrand 50 4779
+2026-10-06T14:38:11 END exit=0 free=768612KB xrun.py rowjam 50 556
+2026-10-06T14:38:11 TINY(low-mem, <1min, <100MB) free=804852KB xrun.py mrand 50 5716
+2026-10-06T14:38:12 TINY(low-mem, <1min, <100MB) free=746888KB xrun.py rowjam 50 685
+2026-10-06T14:38:31 END exit=0 free=769028KB geomsearch.py star 50 1e-6
+2026-10-06T14:38:32 TINY(low-mem, <1min, <100MB) free=775768KB geomsearch.py star 50 1e-3
+2026-10-06T14:38:58 END exit=0 free=715284KB geomsearch.py star 50 1e-3
+2026-10-06T14:38:59 TINY(low-mem, <1min, <100MB) free=739912KB geomsearch.py star 50 1.4
+2026-10-06T14:39:02 END exit=0 free=746028KB xrun.py mrand 50 5716
+2026-10-06T14:39:03 END exit=0 free=834120KB xrun.py rowjam 50 685
+2026-10-06T14:39:03 TINY(low-mem, <1min, <100MB) free=855680KB xrun.py mrand 50 6601
+2026-10-06T14:39:04 TINY(low-mem, <1min, <100MB) free=824244KB xrun.py rowjam 50 811
+2026-10-06T14:39:24 END exit=0 free=833604KB geomsearch.py star 50 1.4
+2026-10-06T14:39:54 END exit=0 free=977508KB xrun.py mrand 50 6601
+2026-10-06T14:39:55 END exit=0 free=965176KB xrun.py rowjam 50 811
+2026-10-06T14:39:56 TINY(low-mem, <1min, <100MB) free=992136KB xrun.py mrand 50 7508
+2026-10-06T14:39:57 TINY(low-mem, <1min, <100MB) free=919720KB xrun.py rowjam 50 945
+2026-10-06T14:40:01 TINY(low-mem, <1min, <100MB) free=850236KB boundary_exact.py
+2026-10-06T14:40:02 END exit=0 free=841012KB boundary_exact.py
+2026-10-06T14:40:41 TINY(low-mem, <1min, <100MB) free=809668KB xdegen.py
+2026-10-06T14:40:42 END exit=0 free=788696KB xdegen.py
+2026-10-06T14:40:47 END exit=0 free=893036KB xrun.py mrand 50 7508
+2026-10-06T14:40:48 END exit=0 free=1023560KB xrun.py rowjam 50 945
+2026-10-06T14:41:21 TINY(low-mem, <1min, <100MB) free=1049824KB xdegen.py
+2026-10-06T14:41:22 END exit=0 free=1043432KB xdegen.py
+2026-10-06T14:41:39 TINY(low-mem, <1min, <100MB) free=1045560KB xdegen.py
+2026-10-06T14:41:40 END exit=0 free=1028584KB xdegen.py
+2026-10-06T14:41:55 TINY(low-mem, <1min, <100MB) free=951900KB summarize.py
+2026-10-06T14:41:57 END exit=0 free=949560KB summarize.py
+2026-10-06T14:42:58 TINY(low-mem, <1min, <100MB) free=1315060KB xrun.py regime 40 0
+2026-10-06T14:43:39 END exit=0 free=1273984KB xrun.py regime 40 0
+2026-10-06T14:43:57 TINY(low-mem, <1min, <100MB) free=1273388KB xrun.py regime 50 303
+2026-10-06T14:43:58 TINY(low-mem, <1min, <100MB) free=1163044KB xrun.py tri 50 0
+2026-10-06T14:43:59 TINY(low-mem, <1min, <100MB) free=1115972KB xrun.py rowjam 50 1076
+2026-10-06T14:44:45 TINY(low-mem, <1min, <100MB) free=906864KB mutate.py
+2026-10-06T14:44:48 END exit=0 free=908228KB xrun.py regime 50 303
+2026-10-06T14:44:49 END exit=0 free=925188KB xrun.py tri 50 0
+2026-10-06T14:44:49 TINY(low-mem, <1min, <100MB) free=951896KB xrun.py regime 50 620
+2026-10-06T14:44:51 END exit=0 free=936716KB xrun.py rowjam 50 1076
+2026-10-06T14:44:51 TINY(low-mem, <1min, <100MB) free=965936KB xrun.py tri 50 229
+2026-10-06T14:44:52 TINY(low-mem, <1min, <100MB) free=906092KB xrun.py rowjam 50 1206
+2026-10-06T14:44:59 END exit=0 free=944640KB mutate.py
+2026-10-06T14:45:10 TINY(low-mem, <1min, <100MB) free=969332KB mutate.py
+2026-10-06T14:45:24 END exit=0 free=867640KB mutate.py
+2026-10-06T14:45:40 END exit=0 free=921692KB xrun.py regime 50 620
+2026-10-06T14:45:41 TINY(low-mem, <1min, <100MB) free=939228KB xrun.py regime 50 903
+2026-10-06T14:45:42 END exit=0 free=916884KB xrun.py tri 50 229
+2026-10-06T14:45:43 TINY(low-mem, <1min, <100MB) free=908340KB xrun.py tri 50 412
+2026-10-06T14:45:44 END exit=0 free=902492KB xrun.py rowjam 50 1206
+2026-10-06T14:45:46 TINY(low-mem, <1min, <100MB) free=901256KB xrun.py rowjam 50 1326
+2026-10-06T14:45:48 TINY(low-mem, <1min, <100MB) free=853648KB xcross.py
+2026-10-06T14:46:00 END exit=0 free=838828KB xcross.py
+2026-10-06T14:46:32 END exit=0 free=939848KB xrun.py regime 50 903
+2026-10-06T14:46:34 TINY(low-mem, <1min, <100MB) free=943376KB xrun.py regime 50 1205
+2026-10-06T14:46:34 END exit=0 free=937904KB xrun.py tri 50 412
+2026-10-06T14:46:36 TINY(low-mem, <1min, <100MB) free=949680KB xrun.py tri 50 561
+2026-10-06T14:46:37 END exit=0 free=947792KB xrun.py rowjam 50 1326
+2026-10-06T14:46:38 TINY(low-mem, <1min, <100MB) free=950700KB xrun.py rowjam 50 1451
+2026-10-06T14:46:44 TINY(low-mem, <1min, <100MB) free=841032KB xdeath.py
+2026-10-06T14:46:45 END exit=0 free=830776KB xdeath.py
+2026-10-06T14:46:59 TINY(low-mem, <1min, <100MB) free=822672KB xdeath.py
+2026-10-06T14:47:02 END exit=0 free=800052KB xdeath.py
+2026-10-06T14:47:25 END exit=0 free=838756KB xrun.py regime 50 1205
+2026-10-06T14:47:26 TINY(low-mem, <1min, <100MB) free=849908KB xrun.py regime 50 1473
+2026-10-06T14:47:27 END exit=0 free=851272KB xrun.py tri 50 561
+2026-10-06T14:47:28 TINY(low-mem, <1min, <100MB) free=857020KB xrun.py tri 50 684
+2026-10-06T14:47:29 END exit=0 free=862096KB xrun.py rowjam 50 1451
+2026-10-06T14:47:31 TINY(low-mem, <1min, <100MB) free=880748KB xrun.py rowjam 50 1572
+2026-10-06T14:48:17 END exit=0 free=979976KB xrun.py regime 50 1473
+2026-10-06T14:48:18 TINY(low-mem, <1min, <100MB) free=981040KB xrun.py regime 50 1720
+2026-10-06T14:48:19 END exit=0 free=1001820KB xrun.py tri 50 684
+2026-10-06T14:48:21 TINY(low-mem, <1min, <100MB) free=995232KB xrun.py tri 50 794
+2026-10-06T14:48:22 END exit=0 free=963376KB xrun.py rowjam 50 1572
+2026-10-06T14:48:24 TINY(low-mem, <1min, <100MB) free=994924KB xrun.py rowjam 50 1695
+2026-10-06T14:49:09 END exit=0 free=978824KB xrun.py regime 50 1720
+2026-10-06T14:49:11 TINY(low-mem, <1min, <100MB) free=984056KB xrun.py regime 50 1960
+2026-10-06T14:49:12 END exit=0 free=967208KB xrun.py tri 50 794
+2026-10-06T14:49:13 TINY(low-mem, <1min, <100MB) free=975188KB xrun.py tri 50 899
+2026-10-06T14:49:15 END exit=0 free=994048KB xrun.py rowjam 50 1695
+2026-10-06T14:49:16 TINY(low-mem, <1min, <100MB) free=1015916KB xrun.py rowjam 50 1824
+2026-10-06T14:50:01 END exit=0 free=979600KB xrun.py regime 50 1960
+2026-10-06T14:50:02 TINY(low-mem, <1min, <100MB) free=975996KB xrun.py regime 50 2257
+2026-10-06T14:50:03 END exit=0 free=969868KB xrun.py tri 50 899
+2026-10-06T14:50:05 TINY(low-mem, <1min, <100MB) free=956920KB xrun.py tri 50 1009
+2026-10-06T14:50:07 END exit=0 free=974540KB xrun.py rowjam 50 1824
+2026-10-06T14:50:08 TINY(low-mem, <1min, <100MB) free=974396KB xrun.py rowjam 50 1967
+2026-10-06T14:50:53 END exit=0 free=302160KB xrun.py regime 50 2257
+2026-10-06T14:50:55 TINY(low-mem, <1min, <100MB) free=274500KB xrun.py regime 50 2529
+2026-10-06T14:50:56 END exit=0 free=190924KB xrun.py tri 50 1009
+2026-10-06T14:50:59 END exit=0 free=865092KB xrun.py rowjam 50 1967
+2026-10-06T14:51:46 END exit=0 free=1532312KB xrun.py regime 50 2529
+2026-10-06T14:51:47 TINY(low-mem, <1min, <100MB) free=1523116KB xrun.py regime 50 2800
+2026-10-06T14:52:38 END exit=0 free=1512864KB xrun.py regime 50 2800
+2026-10-06T14:55:03 START free=1599996KB summarize.py
+2026-10-06T14:55:05 END exit=0 free=1583212KB summarize.py
+2026-10-06T14:55:45 TINY(low-mem, <1min, <100MB) free=1435260KB memprobe xrun.py mrand 20 9000
+2026-10-06T14:56:06 END memprobe peakWS=28.1MB
+2026-10-06T14:56:21 TINY(low-mem, <1min, <100MB) free=1424096KB summarize.py
+2026-10-06T14:56:23 END exit=0 free=1407228KB summarize.py
+2026-10-06T14:57:16 TINY(low-mem, <1min, <100MB) free=1481092KB geomsearch.py starmin 50 0.3
+2026-10-06T14:57:36 END exit=0 free=1386220KB geomsearch.py starmin 50 0.3
+2026-10-06T14:57:37 TINY(low-mem, <1min, <100MB) free=1306972KB geomsearch.py star 50 0.3
+2026-10-06T14:58:00 END exit=0 free=1104536KB geomsearch.py star 50 0.3

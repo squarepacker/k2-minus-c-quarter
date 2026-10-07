@@ -1,0 +1,11 @@
+{
+ "baseline_any_flag": 0,
+ "MUT-A_we_halved_detected": 14,
+ "MUT-B_noR1_detected": 25,
+ "MUT-C_tie_H_normal": "0",
+ "MUT-C_tie_H_mutated": "4/5",
+ "MUT-C_detected": true,
+ "MUT-D_half_delta_detected": 25,
+ "n_cfgs": 25,
+ "n_cfgs_with_merge": 25
+}

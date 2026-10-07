@@ -1,0 +1,34 @@
+﻿2026-10-06 17:17:55 free=1341MB : env probe (python -c import numpy/mpmath; <1s, ~20MB) was run BEFORE guard; logged as tiny run
+2026-10-06 17:25:44 free=501MB LOW-wait smoke(quick,60s)
+2026-10-06 17:27:44 free=2255MB START smoke(quick,60s) (waited 2 min)
+2026-10-06 17:28:41 free=468MB END smoke(quick,60s) exit=0 elapsed=177.5s
+2026-10-06 17:31:17 free=1615MB START thresh(<1min,tiny) (waited 0 min)
+2026-10-06 17:31:18 free=1601MB START conseq quick(90s) (waited 0 min)
+2026-10-06 17:31:21 free=1579MB END thresh(<1min,tiny) exit=0 elapsed=4.2s
+2026-10-06 17:31:45 free=791MB END conseq quick(90s) exit=0 elapsed=27.2s
+2026-10-06 17:32:45 free=1884MB START main run(1800s) (waited 0 min)
+2026-10-06 17:32:46 free=1877MB START conseq full(1500s) (waited 0 min)
+2026-10-06 17:32:46 free=1866MB END main run(1800s) exit=1 elapsed=2.1s
+2026-10-06 17:32:49 free=1812MB START extreme witnesses(tiny) (waited 0 min)
+2026-10-06 17:32:51 free=1781MB END extreme witnesses(tiny) exit=0 elapsed=1.9s
+2026-10-06 17:34:29 free=2957MB START main run(1740s) relaunch after 0/0 fix (waited 0 min)
+2026-10-06 17:35:13 free=2722MB START conseq c0=0.6 (1300s) (waited 0 min)
+2026-10-06 17:56:35 free=2932MB END conseq c0=0.6 (1300s) exit=0 elapsed=1282.2s
+2026-10-06 17:57:00 free=2953MB START refl lemma3.3(tiny) (waited 0 min)
+2026-10-06 17:57:02 free=2950MB END refl lemma3.3(tiny) exit=0 elapsed=3.5s
+2026-10-06 17:57:14 free=3012MB START py_compile(tiny) (waited 0 min)
+2026-10-06 17:57:15 free=3023MB END py_compile(tiny) exit=0 elapsed=2s
+2026-10-06 17:57:26 free=3068MB START main2 towers/valley/pile (1800s) (waited 0 min)
+2026-10-06 17:57:28 free=3015MB END conseq full(1500s) exit=0 elapsed=1482.5s
+2026-10-06 17:58:55 free=3519MB START fuzz (1500s) (waited 0 min)
+2026-10-06 18:03:14 free=2882MB END main run(1740s) relaunch after 0/0 fix exit=0 elapsed=1725.4s
+2026-10-06 18:04:12 free=2935MB START conseq2 c0=0.45 +side tests (1450s) (waited 0 min)
+2026-10-06 18:10:34 free=2575MB END main2 towers/valley/pile (1800s) exit=0 elapsed=788.5s
+2026-10-06 18:11:22 free=2633MB START side/non-vacuity (700s) (waited 0 min)
+2026-10-06 18:13:21 free=2530MB END side/non-vacuity (700s) exit=0 elapsed=119.2s
+2026-10-06 18:13:53 free=2769MB START merge exact (short) (waited 0 min)
+2026-10-06 18:13:56 free=2763MB END merge exact (short) exit=0 elapsed=3s
+2026-10-06 18:23:41 free=2775MB END fuzz (1500s) exit=0 elapsed=1487.4s
+2026-10-06 18:28:02 free=2968MB END conseq2 c0=0.45 +side tests (1450s) exit=0 elapsed=1431.5s
+2026-10-06 18:28:36 free=2952MB START aggregate(tiny) (waited 0 min)
+2026-10-06 18:28:38 free=2940MB END aggregate(tiny) exit=0 elapsed=1.9s
